@@ -1,0 +1,27 @@
+version: "3.1"
+intents:
+  - saudar
+  - despedir
+  - vendas
+  - suporte_tecnico
+  - informacoes_gerais
+  - nlu_fallback
+
+responses:
+  utter_saudacao:
+    - text: "Olá! Como posso ajudar hoje?"
+  utter_despedida:
+    - text: "Até logo! Se precisar de algo mais, é só chamar."
+  utter_direcionar_vendas:
+    - text: "Entendido. Vou te conectar com a equipe de vendas. Por favor, aguarde."
+  utter_direcionar_suporte:
+    - text: "Ok. Vou te transferir para o suporte técnico. Um momento, por favor."
+  utter_direcionar_informacoes:
+    - text: "Certo. Posso te ajudar com informações gerais. Qual sua dúvida?"
+  utter_nao_entendi:
+    - text: "Desculpe, não entendi. Você poderia reformular sua pergunta?"
+
+actions:
+  - action_direcionar_vendas
+  - action_direcionar_suporte
+  - action_direcionar_informacoes

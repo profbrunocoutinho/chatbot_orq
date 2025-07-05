@@ -1,0 +1,28 @@
+version: "3.1"
+stories:
+  - story: saudar e direcionar vendas
+    steps:
+      - intent: saudar
+      - action: utter_saudacao
+      - intent: vendas
+      - action: action_direcionar_vendas
+      - action: utter_direcionar_vendas
+
+  - story: saudar e direcionar suporte
+    steps:
+      - intent: saudar
+      - action: utter_saudacao
+      - intent: suporte_tecnico
+      - action: action_direcionar_suporte
+      - action: utter_direcionar_suporte
+
+  - story: informacoes gerais simples
+    steps:
+      - intent: informacoes_gerais
+      - action: action_direcionar_informacoes
+      - action: utter_direcionar_informacoes
+
+  - story: apenas despedida
+    steps:
+      - intent: despedir
+      - action: utter_despedida

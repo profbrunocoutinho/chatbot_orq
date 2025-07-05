@@ -1,0 +1,21 @@
+# tests/test_stories.yml
+version: "3.1"
+stories:
+  - story: Teste - Saudar e direcionar para vendas
+    steps:
+      - user: |  # Use o pipe | para strings multilinhas
+          olá
+        intent: saudar
+      - bot: |
+          Olá! Como posso ajudar hoje?
+        action: utter_saudacao
+      - user: |  
+          quero comprar um produto
+        intent: vendas
+      - bot: |  
+          Entendido. Vou te conectar com a equipe de vendas. Por favor, aguarde.
+        action: utter_direcionar_vendas
+      - bot: |  
+          Simulando conexão com o sistema de vendas...
+        action: action_direcionar_vendas
+

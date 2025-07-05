@@ -1,0 +1,16 @@
+version: "3.1"
+rules:
+  - rule: Saudar
+    steps:
+      - intent: saudar
+      - action: utter_saudacao
+
+  - rule: Despedir
+    steps:
+      - intent: despedir
+      - action: utter_despedida
+      
+  - rule: Ativar fallback quando a intenção é incerta
+    steps:
+      - intent: nlu_fallback # Quando a intenção prevista é nlu_fallback
+      - action: utter_nao_entendi # O bot deve responder "Não entendi"

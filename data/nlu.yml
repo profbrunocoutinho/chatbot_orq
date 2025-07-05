@@ -1,0 +1,37 @@
+version: "3.1"
+nlu:
+  - intent: saudar
+    examples: |
+      - oi
+      - olá
+      - bom dia
+      - boa tarde
+      - boa noite
+      - e aí
+  - intent: despedir
+    examples: |
+      - tchau
+      - até logo
+      - adeus
+      - obrigado e tchau
+  - intent: vendas
+    examples: |
+      - quero comprar um produto
+      - falar com vendas
+      - preciso de ajuda para comprar
+      - qual o preço de X?
+      - como faço um pedido?
+  - intent: suporte_tecnico
+    examples: |
+      - meu produto está com defeito
+      - preciso de suporte
+      - o sistema não funciona
+      - ajuda com um problema técnico
+      - meu computador travou
+  - intent: informacoes_gerais
+    examples: |
+      - qual o horário de atendimento?
+      - onde fica a loja?
+      - informações sobre a empresa
+      - como faço para entrar em contato?
+      - sobre a garantia
